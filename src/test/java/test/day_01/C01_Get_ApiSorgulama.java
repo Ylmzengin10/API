@@ -44,11 +44,11 @@ public class C01_Get_ApiSorgulama {
 
         response.prettyPrint();// yazdırma işi hazırlama aşamasında yapılır sonra yoruma alınır
 
-
-
-
-
-
+        System.out.println("Status Code : " + response.getStatusCode());
+        System.out.println("Content type : " + response.getContentType());
+        System.out.println("Server Header Degeri : " + response.getHeader("Server"));
+        System.out.println("Status Line : " + response.getStatusLine());
+        System.out.println("Response Suresi : " + response.getTime());
 
 
 
