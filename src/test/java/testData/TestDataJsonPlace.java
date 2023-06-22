@@ -2,9 +2,15 @@ package testData;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TestDataJsonPlace {
 
     public int basariliStatusCode = 200;
+    public String contentType = "application/json; charset=utf-8";
+    public String connectionHeaderDegeri = "keep-alive";
+
     public JSONObject expectedBodyOlusturJSON(){
 
         JSONObject expData = new JSONObject();
@@ -37,5 +43,29 @@ public class TestDataJsonPlace {
 
         return reqBody;
     }
+
+    public HashMap requestBodyOlusturMap(){
+
+          /*
+          {
+        "title":"Ahmet",
+        "body":"Merhaba",
+        "userId":10,
+        "id":70
+        }
+           */
+
+        HashMap <String ,Object> reqBody = new HashMap<>();
+
+        reqBody.put("title","Ahmet");
+        reqBody.put("body","Merhaba");
+        reqBody.put("userId",10.0);
+        reqBody.put("id",70.0);
+
+        return reqBody;
+    }
+
+
+
 
 }
