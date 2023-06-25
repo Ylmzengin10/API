@@ -1,7 +1,6 @@
 package pojos;
 
 
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,6 +18,4 @@ public class BookingdatesPOJO {
 
     private String checkin;
     private String checkout;
-
-
 }

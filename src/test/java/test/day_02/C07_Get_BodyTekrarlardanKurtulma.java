@@ -1,5 +1,4 @@
 package test.day_02;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -62,7 +61,6 @@ public class C07_Get_BodyTekrarlardanKurtulma {
                         "totalprice",equalTo(613),
                         "depositpaid", equalTo(false),
                         "additionalneeds", equalTo("Breakfast"));
-
 
     }
 
